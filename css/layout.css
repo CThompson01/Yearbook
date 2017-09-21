@@ -12,6 +12,20 @@ html {
   border: 0;
   background-color: #ffffff;
 }
+footer {
+	font-size: 0.7em;
+	padding-bottom: 20px;
+	display: block;
+	width: 100%;
+	height: 60px;
+	background-color: #d10202;
+	color: #EFEFEF;
+	position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
 
 .banner-txt {
   position: absolute;
@@ -24,20 +38,20 @@ body {
 
 body > header {
   position: absolute;
-  left: 0px;
   text-align: center;
-  padding-top: 10px;
-  line-height: 20px;
+  display: block;
+  padding-top: 33px;
   width: 100%;
-	background-color: #ff0000;
+	background: linear-gradient(to right, transparent, red),url("images/westfalconb.jpg");
 	border-bottom: 2px solid #e8d0d0;
+  background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: left top;
 }
-
-#navbar {
-  top:80px;
-  height: 30px;
-  border-top: 2px solid #e8d0d0;
-  text-shadow: 2px 2px #000000;
+body > header > nav ul li {
+	display: inline;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	color: #EFEFEF;
 }
 
 #banner {
@@ -174,10 +188,6 @@ a:hover {
 }
 
 .backgr {
-  display: none;
-}
-
-#navbar {
   display: none;
 }
 
