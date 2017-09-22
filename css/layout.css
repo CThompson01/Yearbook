@@ -12,20 +12,6 @@ html {
   border: 0;
   background-color: #ffffff;
 }
-footer {
-	font-size: 0.7em;
-	padding-bottom: 20px;
-	display: block;
-	width: 100%;
-	height: 60px;
-	background-color: #d10202;
-	color: #EFEFEF;
-	position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
 
 .banner-txt {
   position: absolute;
@@ -42,25 +28,49 @@ body > header {
   display: block;
   padding-top: 33px;
   width: 100%;
-	background: linear-gradient(to right, transparent, red),url("images/westfalconb.jpg");
+
 	border-bottom: 2px solid #e8d0d0;
   background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: left top;
 }
+
 body > header > nav ul li {
 	display: inline;
 	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
 	color: #EFEFEF;
 }
 
+footer {
+  position: absolute;
+  box-shadow: 0px 52px 20px 15px rgba(0, 0, 0, 0.8);
+  top: 110%;
+  left: 15%;
+  right: 15%;
+}
+
+footer:hover{
+  filter:brightness(1.15)saturate(.80);
+}
+
 #banner {
   color: #ffffff;
-  padding-bottom: 20px;
-  background: linear-gradient(#ffd3d3,#ff0000) no-repeat center;
-  text-shadow: 1px 1px #ffffff;
+  z-index: 10000001;
+  padding-bottom: 25px;
+  text-shadow: 1px 1px #000000;
+  background: linear-gradient(to right, transparent, red);
   top: 0px;
+  left:0px;
   height: 50px;
+}
+
+#banner-img {
+  z-index: 10000000;
+  position: absolute;
+  top:0px;
+  left:0px;
+  width:75%;
+  height:110px;
 }
 
 #body-content {
@@ -90,25 +100,22 @@ body > header > nav ul li {
 #counting-tag {
   margin-left: 35%;
   margin-right: 35%;
+  color: #ffffff;
+  border:2px solid #000000;
+  background-color: #ff0000;
+  border-radius: 10%;
 }
 
 #countingdown {
-  border:2px solid #000000;
-  background-color: #ff8989;
-  color: #000000;
   font-size: 30px;
 }
 
 #countingdown-text {
-  border:2px solid #000000;
-  background-color: #ff8989;
-  color: #000000;
   margin-top: 0px;
   font-size: 15px;
 }
 
 #yearbook-ad {
-  border:1px solid #ff0000;
   width: 50%;
   height: 35%;
   margin-left: 25%;
@@ -144,7 +151,7 @@ body > header > nav ul li {
   position: fixed;
   width: 100%;
   height:100%;
-  background-color: #b2a7a7;
+  background-color: #9f9f9f;
 }
 
 .sponsor-image {
@@ -191,8 +198,15 @@ a:hover {
   display: none;
 }
 
+footer {
+  left:0%;
+  right:0%;
+  box-shadow: none;
+}
+
 #body-content {
   top: 80px;
+  background-color: #c4aaaa;
   left:0%;
   right:0%;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
